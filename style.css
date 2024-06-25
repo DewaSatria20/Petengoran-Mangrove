@@ -1,0 +1,74 @@
+.navbar {
+    font-size: 1rem; /* Set font size for navbar items */
+    padding: 0.5rem 1rem; /* Set padding for navbar */
+}
+
+.navbar-brand {
+    font-size: 1.5rem; /* Set font size for navbar brand */
+    margin-right: 1.5rem; /* Add margin to the right of the brand */
+}
+
+.nav-link {
+    margin-left: 1rem; /* Add margin to the left of each nav link */
+}
+
+.banner {
+    position: relative;
+    background: url('images/image2.png') no-repeat center center; /* Adjust background position to center */
+    background-size: cover;
+    height: 100vh; /* Full screen height */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    text-align: center;
+    padding: 0 20px;
+    box-sizing: border-box;
+}
+
+.banner::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6); /* Black overlay with 60% opacity */
+    z-index: 1;
+}
+
+.banner .content {
+    position: relative;
+    z-index: 2;
+    max-width: 800px; /* Maximum width of the text block */
+    margin: 0 auto; /* Center the text block */
+}
+
+.banner h1 {
+    font-size: 2.5rem; /* Adjust font size for better readability */
+    margin: 0;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Add text shadow for better readability */
+}
+
+.banner p {
+    font-size: 1.25rem; /* Adjust font size for better readability */
+    margin: 20px 0 0;
+    line-height: 1.6; /* Increase line height for better readability */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Add text shadow for better readability */
+    text-align: center; /* Center align the text */
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 20px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
